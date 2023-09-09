@@ -7,12 +7,13 @@ var count=false;
 var len= str.length;
 console.log(len);
 
-
 for(n=0;n<len;n++){
     if(str[n]==str[len-n-1])
        {
        count=true;
     }
+    else 
+    count=false;
 }
 if(count)
     console. log("It is a palindrome");
