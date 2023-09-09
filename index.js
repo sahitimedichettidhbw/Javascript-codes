@@ -100,12 +100,57 @@ sum();*/
  console.log(capt("arnav"));
  console.log(capt("krishna"));*/
 
- let type = (x)=>{
+// Function should take one parameter and print in console what is type of the parameter
+ /*let type = (x)=>{
     console.log(typeof(x));
 };
 type(2);
 type("Sahu");
-type(false);
+type(false);*/
+
+//Function should take one parameter of type array and print string "all integers" if all the items in the array are of type int else print it is "not integer "
+/*const arr=[1,2,3,"Avi"];
+let b;
+function onlNum(arr){
+return arr.every((element) =>{
+    return !isNaN(element);
+
+    });
+    
+    
+}
+b=onlNum(arr);
+if(b)
+    console.log("all are Integers");
+    else
+    console.log("all are not integers");*/
+
+
+// What is return value 2=='2' and 2==='2'
+/*const Val=()=>{
+    console.log(2=="2");
+     console.log(2==="2");
+     return;
+};
+Val();*/
+
+
+//Print factorial of number using recursive functions
+
+    var factorial=(num)=> {
+        if((num==0)||(num==1))
+        return 1;
+
+        for(n=1;n<=num;n++){
+        num=num*n;
+        }
+        console.log(num);
+    };
+
+console.log(factorial(4));
+
+    
+    
 
 
 
