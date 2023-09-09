@@ -1,5 +1,6 @@
-/*function palindr(){
-    x="APPU CB CB sdcf";
+// APPU CB CB APPU check palindrome
+function palindr(){
+    x="APPU CB CB APPU";
 var count=false;
  var str= x.split(" ");
  console.log(str);   
@@ -20,9 +21,10 @@ if(count)
 }
 
 palindr();
-*/
 
-/*function alpha(x){
+// SAHITI- print how many times each alphabet comes?
+
+function alpha(x){
 
     //x="SAHITI";
     var len= x.length;
@@ -42,9 +44,11 @@ palindr();
 }
     //console.log(x[0]);
 }
-alpha("APPU");*/
+alpha("APPU");
 
-/*function rev(){
+
+// Array= 1,2,3,4,5 to 5,4,3,2,1.
+function rev(){
     let a =[1,2,3,4,5];
     let b=[];
     var len= a.length;
@@ -55,9 +59,10 @@ alpha("APPU");*/
         console.log("Reverse of an array: " +b[n]);
     }
 }
-rev();*/
+rev();
 
-/*function sum(){
+// Check whether the numbers in array are integers or not. If so summ of those numbers.
+function sum(){
     let a=[1,5,6,7,10,"Akshay"];
     let b=[];
     var sum=0;
@@ -74,9 +79,11 @@ rev();*/
     }
     console.log("The sum of integers is " +sum);
 }
-sum();*/
+sum();
 
- /*function capt(x){
+
+// Make every even number placed alphabet caps
+ function capt(x){
     //x="hello";
     var len= x.length;
     let b= "";
@@ -98,15 +105,15 @@ sum();*/
  console.log(capt("hello"));
  console.log(capt("HELLO"));
  console.log(capt("arnav"));
- console.log(capt("krishna"));*/
+ console.log(capt("krishna"));
 
 // Function should take one parameter and print in console what is type of the parameter
- /*let type = (x)=>{
+ let type = (x)=>{
     console.log(typeof(x));
 };
 type(2);
 type("Sahu");
-type(false);*/
+type(false);
 
 
 
