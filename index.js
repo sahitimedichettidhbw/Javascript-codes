@@ -108,31 +108,7 @@ type(2);
 type("Sahu");
 type(false);*/
 
-//Function should take one parameter of type array and print string "all integers" if all the items in the array are of type int else print it is "not integer "
-/*const arr=[1,2,3,"Avi"];
-let b;
-function onlNum(arr){
-return arr.every((element) =>{
-    return !isNaN(element);
 
-    });
-    
-    
-}
-b=onlNum(arr);
-if(b)
-    console.log("all are Integers");
-    else
-    console.log("all are not integers");*/
-
-
-// What is return value 2=='2' and 2==='2'
-/*const Val=()=>{
-    console.log(2=="2");
-     console.log(2==="2");
-     return;
-};
-Val();*/
 
 
 
