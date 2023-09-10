@@ -1,5 +1,5 @@
 // APPU CB CB APPU check palindrome
-function palindr(){
+/*function palindr(){
     x="APPU CB CB APPU";
 var count=false;
  var str= x.split(" ");
@@ -114,7 +114,7 @@ sum();
 };
 type(2);
 type("Sahu");
-type(false);
+type(false);*/
 
 
 
