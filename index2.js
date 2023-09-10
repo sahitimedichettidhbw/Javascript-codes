@@ -87,4 +87,36 @@ console.log(output);*/
 const btn= document.getElementById("click");
 btn.addEventListener("click", function(){
     console.log(document.getElementById("text").value);
+    Palin();
 });
+function Palin(){
+    var str= document.getElementById("text").value;
+    var len= str.length;
+    for(n=0;n<Math.floor(len/2);n++){
+        if(str[n]!==str[len-n-1]){
+        count=false;
+        } 
+        else{
+            count=true;
+        }
+    
+    }
+    if(count)
+    console.log("It is a Palindrome");
+    else{
+        console.log("It is not");
+    }
+     
+}
+
+
+
+    
+
+/*const arr=[2,2,6,7];
+const output=arr.filter((x)=> x==2);
+console.log(output);
+
+const output1= arr.find((x)=>  x==7
+);
+console.log(output1);*/

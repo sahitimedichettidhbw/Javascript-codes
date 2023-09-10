@@ -1,5 +1,5 @@
 // APPU CB CB APPU check palindrome
-/*function palindr(){
+function palindr(){
     x="APPU CB CB APPU";
 var count=false;
  var str= x.split(" ");
@@ -25,7 +25,7 @@ palindr();
 
 // SAHITI- print how many times each alphabet comes?
 
-function alpha(x){
+/*function alpha(x){
 
     //x="SAHITI";
     var len= x.length;
