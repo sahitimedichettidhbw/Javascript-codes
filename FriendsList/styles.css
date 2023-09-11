@@ -1,0 +1,32 @@
+button{
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+    color: grey;
+    border: none;
+
+}
+
+h1{
+   color: brown; 
+}
+
+input[type="text"]{
+    padding: 5px 8px;
+    width: 50%;
+}
+ul{
+    border: 2px;
+    list-style-type: none;
+    padding:0%;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+
+

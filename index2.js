@@ -87,9 +87,41 @@ console.log(output);*/
 const btn= document.getElementById("click");
 btn.addEventListener("click", function(){
     console.log(document.getElementById("text").value);
-    Palin();
+    //Palin();
 });
-function Palin(){
+const apiUrl = 'https://services.odata.org/northwind/northwind.svc/Employees?$format=json';
+const dataList = document.getElementById('data-list');
+
+
+// Make a GET request to the API
+fetch(apiUrl)
+  .then((response) => {
+    // Check if the response status code is OK (200)
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
+    // Parse the response body as JSON
+    return response.json();
+  })
+  .then(data => {
+    // Handle the JSON data from the API
+    console.log(data);
+    dataList.innerHTML = '';
+
+    // Create list items and append them to the unordered list
+    data.value.forEach((item) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = item.FirstName; // Replace 'name' with the actual property name you want to display
+      dataList.appendChild(listItem);
+    });
+
+  })
+  .catch((error) => {
+    // Handle any errors that occurred during the fetch
+    console.error('Fetch error:', error);
+  });
+/*function Palin(){
     var str= document.getElementById("text").value;
     var len= str.length;
     for(n=0;n<Math.floor(len/2);n++){
@@ -107,7 +139,7 @@ function Palin(){
         console.log("It is not");
     }
      
-}
+}*/
 
 
 
@@ -117,6 +149,6 @@ function Palin(){
 const output=arr.filter((x)=> x==2);
 console.log(output);
 
-const output1= arr.find((x)=>  x==7
+const output1= arr.find((x)=>  x==2
 );
 console.log(output1);*/
