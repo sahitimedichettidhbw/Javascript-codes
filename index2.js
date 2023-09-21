@@ -83,7 +83,7 @@ const output=arr.filter((x)=> x%2==0);
 console.log(output);*/
 
 // where it has a button and input field. Click on button.. console.log the text in input
-
+/*
 const btn= document.getElementById("click");
 btn.addEventListener("click", function(){
     console.log(document.getElementById("text").value);
@@ -120,7 +120,7 @@ fetch(apiUrl)
   .catch((error) => {
     // Handle any errors that occurred during the fetch
     console.error('Fetch error:', error);
-  });
+  });*/
 /*function Palin(){
     var str= document.getElementById("text").value;
     var len= str.length;
@@ -152,3 +152,103 @@ console.log(output);
 const output1= arr.find((x)=>  x==2
 );
 console.log(output1);*/
+
+
+
+//Write a function that takes a string as input and returns the reverse of that string.
+/*let b=" ";
+function rev(x){
+    //x="sahiti";
+    //var a= x.split("");
+    //console.log(a);
+    let b=[];
+    const len= x.length;
+    for(n=0;n<len;n++){
+        b[n]=x[len-n-1];
+        //console.log(b[n]);
+    }
+    console.log("The reverse of " +x+ ":", b.join(""));
+
+}
+rev("sahiti");
+// 2 way of reverse
+
+function reverseString(x){
+    return x.split("").reverse().join("");
+}
+console.log(reverseString("appu"));
+
+// Reverse of each character in a sentence
+
+const str="I need to crack this interview";
+const reversedSent= reverseSenten(str);
+
+console.log(reversedSent);
+
+function reverseSenten(str){
+    a=str.split("").reverse().join("");
+    let b=a.split(" ").reverse();
+    return a;
+
+}*/
+
+
+//Fibonacci series
+/*
+function fibonacci(){
+    let a=0;
+    let b=1;
+    console.log(a);
+    console.log(b);
+    for(n=1;n<=10;n++){
+        temp=a+b;
+        a=b;
+        b=temp;
+        console.log(b);
+    }
+}
+fibonacci();*/
+
+// Missing number
+/*
+let arr=[1,2,3,4,5,6,7,8];
+let missArra=[];
+let minNum= Math.min(...arr);
+let maxNum= Math.max(...arr);
+function missingNumber(arr){
+
+for(i=minNum;i<maxNum;i++)
+{
+    if(arr.indexOf(i)<0){
+        missArra.push(i);
+
+    }
+}
+    
+console.log("The missing array " +missArra);
+}
+
+
+missingNumber(arr);*/
+// Remove duplicates fro the array.
+
+let arr=[2,5,12,8,8,5,1];
+let newArr=[];
+function removeDuplicates(arr){
+    //let a= arr.length;
+    const rmvDup= arr.forEach((item)=>{
+        if(!newArr.includes(item))
+        newArr.push(item);
+    });
+    console.log("New array using forEach", newArr);
+    let removDupli= arr.reduce(function(item, curr){
+        if(!item.includes(curr))
+            item.push(curr);
+        return item;
+    }, []);
+    //return removDupli;
+         console.log("New Array is", removDupli);
+}
+removeDuplicates(arr);
+
+
