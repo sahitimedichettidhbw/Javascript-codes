@@ -222,34 +222,20 @@ console.log("Coprime Counts:", output);
 // const combinations = countVehicleCombinations(wheels);
 // console.log("Vehicle Combinations:", combinations); // Output: [[2, 0], [0, 0], [1, 0]]
 
-function countVehicleCombinations(wheels) {
-    const result = [];
 
-    for (let i = 0; i < wheels.length; i++) {
-        const wheelsCount = wheels[i];
-        let twoWheelCount = 0;
-        let fourWheelCount = 0;
 
-        // Calculate the number of 2-wheel vehicles
-        for (let j = 0; j <= wheelsCount; j += 2) {
-            if (j % 4 === 0) {
-                twoWheelCount++;
-            }
-        }
+const math=require('./add');
+const mul =require('./mul');
+const MuLFn =mul(3,8);
+console.log(math.add(3,5));
+console.log(math.sub(4,5));
+//console.log(sum, sum2);
+console.log(MuLFn);
 
-        // Calculate the number of 4-wheel vehicles
-        for (let k = 0; k <= wheelsCount; k += 4) {
-            fourWheelCount++;
-        }
+const name=require('./name1');
+console.log(name.getName());
+name.setName('Arjun');
+console.log(name.getName());
 
-        result.push(twoWheelCount + fourWheelCount);
-    }
-
-    return result;
-}
-
-// Example usage:
-const wheels = [4, 5, 2];
-const combinations = countVehicleCombinations(wheels);
-console.log("Vehicle Combinations:", combinations); // Output: [2, 0, 1]
-
+const name2=require('./name1');
+console.log(name2.getName());
