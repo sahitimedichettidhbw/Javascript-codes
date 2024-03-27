@@ -6,5 +6,6 @@ const sub=(a,b) => {
 }
  module.exports={
     add,
-    sub,
+
  };
+ exports= add;
